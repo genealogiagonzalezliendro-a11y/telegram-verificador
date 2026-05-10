@@ -131,6 +131,7 @@ async def rechazar(update: Update, context: ContextTypes.DEFAULT_TYPE):
 app = ApplicationBuilder().token(TOKEN).build()
 
 app.add_handler(CommandHandler("start", start))
+app.add_handler(CommandHandler("idgrupo", idgrupo))
 app.add_handler(ChatJoinRequestHandler(join_request))
 app.add_handler(MessageHandler(filters.TEXT | filters.PHOTO, handle_message))
 app.add_handler(CommandHandler("aprobar", aprobar))

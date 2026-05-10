@@ -23,6 +23,10 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "Bot iniciado correctamente."
     )
 
+async def idgrupo(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    await update.message.reply_text(
+        f"Chat ID: {update.effective_chat.id}"
+    )
 
 async def join_request(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user = update.chat_join_request.from_user

@@ -71,7 +71,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
                 photo=update.message.photo[-1].file_id,
                 caption=(
                     f"Solicitud nueva\n\n"
-                    f"Usuario: {username}\n""
+                    f"Usuario: {username}\n"
                     f"Edad: {age}\n\n"
                     f"/aprobar {user_id}\n"
                     f"/rechazar {user_id}"

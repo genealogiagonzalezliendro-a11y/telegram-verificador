@@ -14,8 +14,8 @@ TOKEN = os.getenv("TOKEN")
 
 pending_users = {}
 
-GROUP_ID = -100XXXXXXXXXX
-ADMIN_ID = 123456789
+GROUP_ID = -1003968636484
+ADMIN_ID = 8011642705
 
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):

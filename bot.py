@@ -10,7 +10,7 @@ from telegram.ext import (
     filters,
 )
 
-TOKEN = os.getenv("TOKEN")
+TOKEN = "8797013447:AAHcfHxJC9H7RqfiegnUe2CMWCReUY32ozc"
 
 pending_users = {}
 
@@ -33,7 +33,7 @@ async def join_request(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     pending_users[user.id] = {
         "step": "age",
-        "username": user.username,
+        "username": user.username or user.first_name,
     }
 
     try:
@@ -71,7 +71,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
                 photo=update.message.photo[-1].file_id,
                 caption=(
                     f"Solicitud nueva\n\n"
-                    f"Usuario: @{username}\n"
+                    f"Usuario: {username}\n""
                     f"Edad: {age}\n\n"
                     f"/aprobar {user_id}\n"
                     f"/rechazar {user_id}"

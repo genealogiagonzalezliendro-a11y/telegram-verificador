@@ -111,7 +111,6 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         reply_markup=reply_markup
     )
 
-
 async def language_selected(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     query = update.callback_query
@@ -127,9 +126,9 @@ async def language_selected(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "username": user.username or user.first_name,
     }
 
-   await query.message.reply_text(
-    TEXTS[lang]["welcome"]
-)
+    await query.message.reply_text(
+        TEXTS[lang]["welcome"]
+    )
 
 async def join_request(update: Update, context: ContextTypes.DEFAULT_TYPE):
 

@@ -188,8 +188,11 @@ async def join_request(update: Update, context: ContextTypes.DEFAULT_TYPE):
     except:
         print("El usuario no inició el bot.")
 
-
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
+
+    # Ignorar mensajes fuera del privado
+    if update.effective_chat.type != "private":
+        return
 
     user_id = update.effective_user.id
 
@@ -260,7 +263,6 @@ async def aprobar(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
         "Usuario aprobado."
     )
-
 
 async def rechazar(update: Update, context: ContextTypes.DEFAULT_TYPE):
 

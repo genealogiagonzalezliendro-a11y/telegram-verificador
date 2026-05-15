@@ -276,7 +276,7 @@ app.add_handler(ChatJoinRequestHandler(join_request))
 
 app.add_handler(
     MessageHandler(
-        filters.TEXT | filters.VIDEO,
+        ~filters.COMMAND,
         handle_message
     )
 )

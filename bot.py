@@ -27,8 +27,14 @@ TEXTS = {
     "es": {
         "welcome": (
             "🔒 Bienvenido al sistema de verificación de LOS COMUNES.\n\n"
-            "Este proceso es obligatorio para ingresar al grupo.\n\n"
-            "Para comenzar, dime tu edad👀"
+    "Este proceso es obligatorio para ingresar al grupo.\n\n"
+
+    "La información enviada será revisada manualmente por una persona.\n"
+    "No envíes información falsa, memes, contenido inválido o cualquier cosa fuera de los requisitos.\n\n"
+
+    "Las solicitudes inválidas serán rechazadas y el usuario podrá ser baneado de la federación de grupos.\n\n"
+            
+            "PARA COMENZAR DIME TU EDAD👀"
         ),
 
         "ask_video": (
@@ -50,8 +56,14 @@ TEXTS = {
     "en": {
         "welcome": (
             "🔒 Welcome to the LOS COMUNES verification system.\n\n"
-            "This process is mandatory to join the group.\n\n"
-            "To begin, tell your age👀"
+    "This process is mandatory to join the group.\n\n"
+
+    "The submitted information will be manually reviewed by a real person.\n"
+    "Do not send fake information, memes, invalid content or anything unrelated to the requirements.\n\n"
+
+    "Invalid requests will be rejected and the user may be banned from the federation of groups.\n\n"
+            
+            "TO BEGIN, TELL YOUR AGE 👀"
         ),
 
         "ask_video": (
@@ -72,9 +84,15 @@ TEXTS = {
 
     "pt": {
         "welcome": (
-            "🔒 Bem-vindo ao sistema de verificação do LOS COMUNES.\n\n"
-            "Este processo é obrigatório para entrar no grupo.\n\n"
-            "Para começar, diga sua idade👀"
+             "🔒 Bem-vindo ao sistema de verificação do LOS COMUNES.\n\n"
+    "Este processo é obrigatório para entrar no grupo.\n\n"
+
+    "As informações enviadas serão revisadas manualmente por uma pessoa real.\n"
+    "Não envie informações falsas, memes, conteúdo inválido ou qualquer coisa fora dos requisitos.\n\n"
+
+    "Solicitações inválidas serão rejeitadas e o usuário poderá ser banido da federação de grupos.\n\n"
+            
+            "PARA COMEçAR, DIGA SUA IDADE👀"
         ),
 
         "ask_video": (

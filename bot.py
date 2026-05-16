@@ -132,6 +132,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 async def language_selected(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     query = update.callback_query
+
     await query.answer()
 
     lang = query.data.split("_")[1]
@@ -144,7 +145,8 @@ async def language_selected(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "username": user.username or user.first_name,
     }
 
-    await query.message.reply_text(
+    # Editar el mensaje original en vez de mandar otro
+    await query.edit_message_text(
         TEXTS[lang]["welcome"]
     )
 
@@ -202,14 +204,22 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     step = pending_users[user_id]["step"]
     lang = pending_users[user_id]["lang"]
 
-    if step == "age":
+   if step == "age":
 
-        pending_users[user_id]["age"] = update.message.text
-        pending_users[user_id]["step"] = "video"
+    if not update.message.text.isdigit():
 
         await update.message.reply_text(
-            TEXTS[lang]["ask_video"]
+            "Por favor enviá solo tu edad en números."
         )
+
+        return
+
+    pending_users[user_id]["age"] = update.message.text
+    pending_users[user_id]["step"] = "video"
+
+    await update.message.reply_text(
+        TEXTS[lang]["ask_video"]
+    )
 
     elif step == "video":
 

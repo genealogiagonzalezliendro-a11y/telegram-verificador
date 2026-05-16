@@ -34,8 +34,8 @@ TEXTS = {
 
             "Este proceso es obligatorio para ingresar al grupo.\n\n"
 
-            "La información enviada será revisada manualmente por una persona.\n"
-            "No envíes información falsa, memes, contenido inválido o cualquier cosa fuera de los requisitos.\n\n"
+            "LA INFORMACIÓN ENVIADA SERÁ REVISADA MANUALMENTE POR UNA PERSONA.\n"
+            "NO ENVIES INFORMACIÓN FALSA, NO ENGAÑARAS A NADIE.\n\n"
 
             "Las solicitudes inválidas serán rechazadas y el usuario podrá ser baneado de la federación de grupos.\n\n"
 
@@ -66,8 +66,8 @@ TEXTS = {
 
             "This process is mandatory to join the group.\n\n"
 
-            "The submitted information will be manually reviewed by a real person.\n"
-            "Do not send fake information, memes, invalid content or anything unrelated to the requirements.\n\n"
+            "THE SUBMITTED INFORMATION WILL BE MANUALLY REVIEWED BY A REAL PERSON.\n"
+            "DO NO SEND FAKE INFORMATIOND,YOU WON'T DECEIVE ANYONE.\n\n"
 
             "Invalid requests will be rejected and the user may be banned from the federation of groups.\n\n"
 
@@ -98,8 +98,8 @@ TEXTS = {
 
             "Este processo é obrigatório para entrar no grupo.\n\n"
 
-            "As informações enviadas serão revisadas manualmente por uma pessoa real.\n"
-            "Não envie informações falsas, memes, conteúdo inválido ou qualquer coisa fora dos requisitos.\n\n"
+            "AS INFORMAÇÕES SERÃO REVISADAS MANUALMENTE POR UNA PESSOA REAL.\n"
+            "NÃO ENVIE INFORMAÇÕES FALSAS, VOCÊ NÃO ENGANARÁ NINGUÉM.\n\n"
 
             "Solicitações inválidas serão rejeitadas e o usuário poderá ser banido da federação de grupos.\n\n"
 

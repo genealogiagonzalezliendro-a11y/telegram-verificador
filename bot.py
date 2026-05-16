@@ -190,6 +190,7 @@ async def join_request(update: Update, context: ContextTypes.DEFAULT_TYPE):
     except:
         print("El usuario no inició el bot.")
 
+
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     # Ignorar mensajes fuera del privado
@@ -222,23 +223,23 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
             return
 
         pending_users[user_id]["age"] = update.message.text
-        pending_users[user_id]["step"] = "video"
+        pending_users[user_id]["step"] = "photo"
 
         await update.message.reply_text(
             TEXTS[lang]["ask_video"]
         )
 
-    # PEDIR VIDEO
-    elif step == "video":
+    # PEDIR FOTO
+    elif step == "photo":
 
-        if update.message.video:
+        if update.message.photo:
 
             age = pending_users[user_id]["age"]
             username = pending_users[user_id]["username"]
 
-            await context.bot.send_video(
+            await context.bot.send_photo(
                 chat_id=ADMIN_ID,
-                video=update.message.video.file_id,
+                photo=update.message.photo[-1].file_id,
                 caption=(
                     f"Solicitud nueva\n\n"
                     f"Usuario: {username}\n"
@@ -260,6 +261,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
                 TEXTS[lang]["invalid_video"]
             )
 
+
 async def aprobar(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     if update.effective_user.id != ADMIN_ID:
@@ -280,6 +282,7 @@ async def aprobar(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
         "Usuario aprobado."
     )
+
 
 async def rechazar(update: Update, context: ContextTypes.DEFAULT_TYPE):
 

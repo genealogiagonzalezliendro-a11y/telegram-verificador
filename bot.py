@@ -204,23 +204,31 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     step = pending_users[user_id]["step"]
     lang = pending_users[user_id]["lang"]
 
-   if step == "age":
+    # PEDIR EDAD
+    if step == "age":
 
-    if not update.message.text.isdigit():
+        if not update.message.text:
+
+            await update.message.reply_text(
+                "Please send your age using numbers only."
+            )
+            return
+
+        if not update.message.text.isdigit():
+
+            await update.message.reply_text(
+                "Please send only your age in numbers."
+            )
+            return
+
+        pending_users[user_id]["age"] = update.message.text
+        pending_users[user_id]["step"] = "video"
 
         await update.message.reply_text(
-            "Por favor enviá solo tu edad en números."
+            TEXTS[lang]["ask_video"]
         )
 
-        return
-
-    pending_users[user_id]["age"] = update.message.text
-    pending_users[user_id]["step"] = "video"
-
-    await update.message.reply_text(
-        TEXTS[lang]["ask_video"]
-    )
-
+    # PEDIR VIDEO
     elif step == "video":
 
         if update.message.video:
@@ -251,7 +259,6 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
             await update.message.reply_text(
                 TEXTS[lang]["invalid_video"]
             )
-
 
 async def aprobar(update: Update, context: ContextTypes.DEFAULT_TYPE):
 

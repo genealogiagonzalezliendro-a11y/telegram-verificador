@@ -166,6 +166,11 @@ async def language_selected(update: Update, context: ContextTypes.DEFAULT_TYPE):
         TEXTS[lang]["welcome"]
     )
 
+    context.job_queue.run_once(
+        send_warning,
+        600,
+        data=user.id
+    )
 
 async def join_request(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
@@ -213,6 +218,29 @@ async def join_request(update: Update, context: ContextTypes.DEFAULT_TYPE):
     except Exception as e:
         print(f"No se pudo enviar mensaje: {e}")
 
+async def send_warning(context: ContextTypes.DEFAULT_TYPE):
+
+    user_id = context.job.data
+
+    if user_id not in pending_users:
+        return
+
+    step = pending_users[user_id].get("step")
+
+    if step == "done":
+        return
+
+    lang = pending_users[user_id].get("lang", "es")
+
+    try:
+
+        await context.bot.send_message(
+            chat_id=user_id,
+            text=TEXTS[lang]["warning"]
+        )
+
+    except:
+        pass
 
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
 

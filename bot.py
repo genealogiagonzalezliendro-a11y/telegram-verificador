@@ -39,12 +39,12 @@ TEXTS = {
 
         "ask_video": (
             "Perfecto.\n\n"
-            "Ahora enviá un VIDEO DESNUDO permanente parado "
+            "Ahora enviá una foto DESNUDO permanente parado "
             "haciendo estas señas con las manos:\n"
             "👌🤟"
         ),
 
-        "invalid_video": "Tenés que enviar un video válido.",
+        "invalid_video": "Tenés que enviar una foto valida.",
 
         "sent": "Solicitud enviada para revisión.",
 
@@ -68,12 +68,12 @@ TEXTS = {
 
         "ask_video": (
             "Perfect.\n\n"
-            "Now send a permanent  NAKED VIDEO standing up "
+            "Now send a permanent  NAKED PHOTO standing up "
             "doing these hand signs:\n"
             "👌🤟"
         ),
 
-        "invalid_video": "You must send a valid video.",
+        "invalid_video": "You must send a valid photo.",
 
         "sent": "Request sent for review.",
 
@@ -97,12 +97,12 @@ TEXTS = {
 
         "ask_video": (
             "Perfeito.\n\n"
-            "Agora envie um VÍDEO NU permanente em pé "
+            "Agora envie uma FOTO/PIC NU permanente em pé "
             "fazendo estes sinais:\n"
             "👌🤟"
         ),
 
-        "invalid_video": "Você precisa enviar um vídeo válido.",
+        "invalid_video": "Você precisa enviar uma pic válido.",
 
         "sent": "Solicitação enviada para revisão.",
 

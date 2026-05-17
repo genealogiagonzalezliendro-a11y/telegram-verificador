@@ -37,7 +37,7 @@ TEXTS = {
             "LA INFORMACIÓN ENVIADA SERÁ REVISADA MANUALMENTE POR UNA PERSONA.\n"
             "NO ENVIES INFORMACIÓN FALSA, NO ENGAÑARAS A NADIE.\n\n"
 
-            "Las solicitudes inválidas serán rechazadas y el usuario podrá ser baneado de la federación de grupos.\n\n"
+            "Las solicitudes falsas serán rechazadas y reibiras ban.\n\n"
 
             "PARA COMENZAR DECÍ TU EDAD 👀"
         ),
@@ -66,10 +66,10 @@ TEXTS = {
 
             "This process is mandatory to join the group.\n\n"
 
-            "THE SUBMITTED INFORMATION WILL BE MANUALLY REVIEWED BY A REAL PERSON.\n"
-            "DO NO SEND FAKE INFORMATIOND,YOU WON'T DECEIVE ANYONE.\n\n"
+            "THE INFORMATION REVIEWED BY A REAL PERSON.\n"
+            "DO NOT SEND FAKE INFORMATION,YOU WON'T DECEIVE ANYONE.\n\n"
 
-            "Invalid requests will be rejected and the user may be banned from the federation of groups.\n\n"
+            "fake applications will be rejected and banned.\n\n"
 
             "TO BEGIN, TELL YOUR AGE 👀"
         ),
@@ -98,10 +98,10 @@ TEXTS = {
 
             "Este processo é obrigatório para entrar no grupo.\n\n"
 
-            "AS INFORMAÇÕES SERÃO REVISADAS MANUALMENTE POR UNA PESSOA REAL.\n"
+            " SERA ANALISADO POR UNA PESSOA REAL.\n"
             "NÃO ENVIE INFORMAÇÕES FALSAS, VOCÊ NÃO ENGANARÁ NINGUÉM.\n\n"
 
-            "Solicitações inválidas serão rejeitadas e o usuário poderá ser banido da federação de grupos.\n\n"
+            "Solicitações falsas serao rejeitadas e banidas.\n\n"
 
             "PARA COMEÇAR, DIGA SUA IDADE 👀"
         ),

@@ -49,6 +49,7 @@ TEXTS = {
             "haciendo estas señas con las manos:\n\n"
 
             "👌🤟"
+            "ENVIA EXACTAMENTE LO PEDIDO O SERAS RECHAZADO Y BANEADO.\n\n"
         ),
 
         "invalid_photo": "Tenés que enviar una foto válida.",

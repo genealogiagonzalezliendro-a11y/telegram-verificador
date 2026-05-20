@@ -46,10 +46,9 @@ TEXTS = {
             "Perfecto.\n\n"
 
             "Ahora enviá una FOTO DESNUDO permanente, parado CON CARA,\n"
-            "haciendo estas señas con las manos:\n\n"
-            "👌🤟"
+            "haciendo estas señas con las manos:👌🤟\n\n"
             
-            "ENVIA EXACTAMENTE LO PEDIDO O SERAS RECHAZADO Y BANEADO.\n\n"
+            "ENVIA EXACTAMENTE LO PEDIDO O SERAS RECHAZADO Y BANEADO, NO SE ACEPTAN OTRAS FOTOS.\n\n"
         ),
 
         "invalid_photo": "Tenés que enviar una foto válida.",

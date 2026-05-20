@@ -47,8 +47,8 @@ TEXTS = {
 
             "Ahora enviá una FOTO DESNUDO permanente, parado CON CARA,\n"
             "haciendo estas señas con las manos:\n\n"
-
             "👌🤟"
+            
             "ENVIA EXACTAMENTE LO PEDIDO O SERAS RECHAZADO Y BANEADO.\n\n"
         ),
 

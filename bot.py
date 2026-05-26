@@ -42,7 +42,6 @@ TEXTS = {
             "PARA COMENZAR DECÍ TU EDAD 👀"
         ),
 
-     ```python
 "ask_photo": (
     "Perfecto.\n\n"
 
@@ -70,7 +69,7 @@ TEXTS = {
 "rejected":
     "❌ Tu solicitud fue rechazada.",
 },
-```
+
 "en": {
     "welcome": (
         "🔒 Welcome to the LOS COMUNES verification system.\n\n"
@@ -151,12 +150,11 @@ TEXTS = {
     "approved":
         "✅ Sua solicitação foi aprovada.",
 
-    "rejected":
-        "❌ Sua solicitação foi rejeitada.",
-}, 
+     "rejected":
+            "❌ Sua solicitação foi rejeitada.",
+    }
+}
     
-
-
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     keyboard = [

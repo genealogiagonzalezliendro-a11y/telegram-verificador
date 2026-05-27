@@ -53,8 +53,8 @@ TEXTS = {
     "🖖 🤙 🤞 🤟\n\n"
 
     "ENVIÁ EXACTAMENTE LO PEDIDO.\n"
-    "Fotos, videos o contenido fuera de las instrucciones "
-    "serán rechazados y resultarán en ban."
+    "SERÁ REVISADO POR UNA PERSONA, NO PIERDAS EL TIEMPO "
+    " ENVIANDO ALGO QUE NO ES LO SOLICITADO, será rechazado y BANEADO."
 ),
 
 "invalid_photo":

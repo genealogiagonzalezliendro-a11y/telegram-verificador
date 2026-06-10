@@ -30,7 +30,7 @@ ADMIN_ID = 8011642705
 TEXTS = {
     "es": {
         "welcome": (
-            "🔒 Bienvenido al sistema de verificación de LOS COMUNES.\n\n"
+            "🔒 Bienvenido al sistema de verificación de 𝙇𝙊𝙎 𝙈𝙊𝙍𝙏𝘼𝙇𝙀𝙎/MΞИФЯΞS CДLIΞИΓΞS.\n\n"
 
             "La verificación es 𝗢𝗕𝗟𝗜𝗚𝗔𝗧𝗢𝗥𝗜𝗔 y protege la seguridad del grupo y sus miembros.\n\n"
 
@@ -72,7 +72,7 @@ TEXTS = {
 
 "en": {
     "welcome": (
-        "🔒 Welcome to the LOS COMUNES verification system.\n\n"
+        "🔒 Welcome to the 𝙇𝙊𝙎 𝙈𝙊𝙍𝙏𝘼𝙇𝙀𝙎/ MΞИФЯΞS CДLIΞИΓΞS verification system.\n\n"
 
         "Verification is 𝗠𝗔𝗡𝗗𝗔𝗧𝗢𝗥𝗬 and protects the safety of the group and its members.\n\n"
 
@@ -114,7 +114,7 @@ TEXTS = {
 
   "pt": {
     "welcome": (
-        "🔒 Bem-vindo ao sistema de verificação do LOS COMUNES.\n\n"
+        "🔒 Bem-vindo ao sistema de verificação do 𝙇𝙊𝙎 𝙈𝙊𝙍𝙏𝘼𝙇𝙀𝙎/MΞИФЯΞS CДLIΞИΓΞS.\n\n"
 
         "A verificação é 𝗢𝗕𝗥𝗜𝗚𝗔𝗧Ó𝗥𝗜𝗔 e protege a segurança do grupo e de seus membros.\n\n"
 
@@ -229,7 +229,7 @@ async def join_request(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await context.bot.send_message(
             chat_id=user.id,
             text=(
-                "🔒 LOS COMUNES Verification Bot\n\n"
+                "🔒 𝙇𝙊𝙎 𝙈𝙊𝙍𝙏𝘼𝙇𝙀𝙎/MΞИФЯΞS CДLIΞИΓΞS Verification Bot\n\n"
 
                 "Este bot realiza la verificación obligatoria para ingresar al grupo.\n\n"
 

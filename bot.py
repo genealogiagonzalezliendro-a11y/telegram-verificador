@@ -45,11 +45,11 @@ TEXTS = {
 "ask_photo": (
     "Perfecto.\n\n"
 
-    "Ahora enviá UNA FOTO o VIDEO permanente de cuerpo completo, PARADO Y CON CARA.\n"
+    "📌Ahora enviá UNA FOTO o VIDEO permanente de cuerpo completo, PARADO Y CON CARA.\n"
 
-    "✔ Puede ser semidesnudo (sólo en ropa interior) o desnudo (preferiblemente).\n"
+    "✔Puede ser semidesnudo (sólo en ropa interior) o desnudo (preferiblemente).\n\n"
 
-    "Hacé al menos 1 o 2 de estas señas (preferiblemente 2):\n"
+    "📌Hacé al menos 1 o 2 de estas señas (preferiblemente 2):\n"
     "🖖 🤙 🤞 🤟\n\n"
 
     "ENVIÁ EXACTAMENTE LO PEDIDO.\n"
@@ -87,11 +87,11 @@ TEXTS = {
     "ask_photo": (
         "Perfect.\n\n"
 
-        "Now send ONE permanent FULL BODY PHOTO or VIDEO, STANDING AND WITH YOUR FACE VISIBLE.\n"
+        "📌Now send ONE permanent FULL BODY PHOTO or VIDEO, STANDING AND WITH YOUR FACE VISIBLE.\n"
 
-        "✔ It can be semi-nude (underwear only) or nude (preferably).\n"
+        "✔ It can be semi-nude (underwear only) or nude (preferably).\n\n"
 
-        "Do at least 1 or 2 of these hand signs (preferably 2):\n"
+        "📌Do at least 1 or 2 of these hand signs (preferably 2):\n"
         "🖖 🤙 🤞 🤟\n\n"
 
         "SEND EXACTLY WHAT IS REQUESTED.\n"
@@ -129,11 +129,11 @@ TEXTS = {
     "ask_photo": (
         "Perfeito.\n\n"
 
-        "Agora envie UMA FOTO ou VÍDEO permanente de CORPO INTEIRO, EM PÉ E COM O ROSTO VISÍVEL.\n"
+        "📌Agora envie UMA FOTO ou VÍDEO permanente de CORPO INTEIRO, EM PÉ E COM O ROSTO VISÍVEL.\n"
 
-        "✔ Pode ser seminu (apenas roupa íntima) ou nu (de preferência).\n"
+        "✔ Pode ser seminu (apenas roupa íntima) ou nu (de preferência).\n\n"
 
-        "Faça pelo menos 1 ou 2 destes sinais com as mãos (de preferência 2):\n"
+        "📌Faça pelo menos 1 ou 2 destes sinais com as mãos (de preferência 2):\n"
         "🖖 🤙 🤞 🤟\n\n"
 
         "ENVIE EXATAMENTE O QUE FOI SOLICITADO.\n"

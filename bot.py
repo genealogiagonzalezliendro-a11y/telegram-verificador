@@ -54,7 +54,7 @@ TEXTS = {
 
     "ENVIÁ EXACTAMENTE LO PEDIDO.\n"
     "SERÁ REVISADO POR UNA PERSONA, NO PIERDAS EL TIEMPO "
-    " ENVIANDO ALGO QUE NO ES LO SOLICITADO, será rechazado y BANEADO."
+    " HACE LAS SEÑAS Y RESPETA EL FORMATO O SERÁS BANEADO."
 ),
 
 "invalid_photo":
@@ -96,7 +96,7 @@ TEXTS = {
 
         "SEND EXACTLY WHAT IS REQUESTED.\n"
         "Photos, videos or content outside the instructions "
-        "will be rejected and result in a ban."
+        "MAKE THE SIGNALS AND RESPECT THE FORMAT OR YOU WILL BE BANNED."
     ),
 
     "invalid_photo":

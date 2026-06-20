@@ -53,7 +53,7 @@ TEXTS = {
     "🖖 🤙 🤞 🤟\n\n"
 
     "ENVIÁ EXACTAMENTE LO PEDIDO.\n"
-    "será revisado por una persona, no pierdas tiempo con cosas falsas "
+    "será revisado por una persona, no pierdas tiempo con cosas falsa.\n"
     " HACE LAS SEÑAS Y RESPETA EL FORMATO O SERÁS BANEADO."
 ),
 

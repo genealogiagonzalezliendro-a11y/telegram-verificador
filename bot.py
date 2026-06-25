@@ -16,7 +16,7 @@ from telegram.ext import (
     filters,
 )
 
-TOKEN = "8797013447:AAHcfHxJC9H7RqfiegnUe2CMWCReUY32ozc"
+TOKEN = os.getenv("TOKEN")
 
 pending_users = {}
 

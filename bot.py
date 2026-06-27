@@ -35,7 +35,7 @@ TEXTS = {
             "La verificación es 𝗢𝗕𝗟𝗜𝗚𝗔𝗧𝗢𝗥𝗜𝗔 y protege la seguridad del grupo y sus miembros.\n\n"
 
             "Enviá únicamente lo solicitado y 𝗘𝗫𝗔𝗖𝗧𝗔𝗠𝗘𝗡𝗧𝗘 como se indica.\n"
-            "𝗙𝗢𝗧𝗢𝗦 𝗜𝗡𝗖𝗢𝗥𝗥𝗘𝗖𝗧𝗔𝗦, 𝗖𝗢𝗡𝗧𝗘𝗡𝗜𝗗𝗢 𝗙𝗔𝗟𝗦𝗢 𝗼 𝗳𝘂𝗲𝗿𝗮 𝗱𝗲 𝗹𝗮𝘀 𝗶𝗻𝘀𝘁𝗿𝘂𝗰𝗰𝗶𝗼𝗻𝗲𝘀 𝘀𝗲𝗿á𝗻 𝗥𝗘𝗖𝗛𝗔𝗭𝗔𝗗𝗢𝗦.\n\n"
+            "𝗖𝗢𝗡𝗧𝗘𝗡𝗜𝗗𝗢 𝗙𝗔𝗟𝗦𝗢 𝗼 𝗳𝘂𝗲𝗿𝗮 𝗱𝗲 𝗹𝗮𝘀 𝗶𝗻𝘀𝘁𝗿𝘂𝗰𝗰𝗶𝗼𝗻𝗲𝘀 𝘀𝗲𝗿á𝗻 𝗥𝗘𝗖𝗛𝗔𝗭𝗔𝗗𝗢𝗦.\n\n"
 
             "𝘳𝘦𝘷𝘪𝘴𝘢𝘥𝘰 𝘱𝘰𝘳 𝘶𝘯 𝘏𝘜𝘔𝘈𝘕𝘖: 𝘴𝘰𝘭𝘪𝘤𝘪𝘵𝘶𝘥 𝘧𝘢𝘭𝘴𝘢 𝘴𝘦𝘳á 𝘌𝘓𝘐𝘔𝘐𝘕𝘈𝘋𝘈 𝘠 𝘜𝘚𝘜𝘈𝘙𝘐𝘖 𝘉𝘈𝘕𝘌𝘈𝘋𝘖 𝘋𝘌 𝘓𝘈 𝘍𝘌𝘋𝘌𝘙𝘈𝘊𝘐Ó𝘕 .\n\n"
 
@@ -45,7 +45,7 @@ TEXTS = {
 "ask_photo": (
     "Perfecto.\n\n"
 
-    "📌Ahora enviá UNA FOTO o VIDEO permanente de cuerpo completo, PARADO Y CON CARA.\n"
+    "📌Ahora enviá UN VIDEO permanente de cuerpo completo, PARADO Y CON CARA.\n"
 
     "✔Puede ser semidesnudo (sólo en ropa interior) o desnudo (preferiblemente).\n\n"
 
@@ -58,7 +58,7 @@ TEXTS = {
 ),
 
 "invalid_photo":
-    "⚠️ Debés enviar una FOTO o VIDEO válido.",
+    "⚠️ Debés enviar un VIDEO válido.",
 
 "sent":
     "✅ Solicitud enviada para revisión.",
@@ -77,7 +77,7 @@ TEXTS = {
         "Verification is 𝗠𝗔𝗡𝗗𝗔𝗧𝗢𝗥𝗬 and protects the safety of the group and its members.\n\n"
 
         "Send only what is requested and 𝗘𝗫𝗔𝗖𝗧𝗟𝗬 as instructed.\n"
-        "𝗜𝗡𝗖𝗢𝗥𝗥𝗘𝗖𝗧 𝗣𝗛𝗢𝗧𝗢𝗦, 𝗙𝗔𝗞𝗘 𝗖𝗢𝗡𝗧𝗘𝗡𝗧 𝗼𝗿 𝗮𝗻𝘆𝘁𝗵𝗶𝗻𝗴 𝗼𝘂𝘁𝘀𝗶𝗱𝗲 𝘁𝗵𝗲 𝗶𝗻𝘀𝘁𝗿𝘂𝗰𝘁𝗶𝗼𝗻𝘀 𝘄𝗶𝗹𝗹 𝗯𝗲 𝗥𝗘𝗝𝗘𝗖𝗧𝗘𝗗.\n\n"
+        "𝗙𝗔𝗞𝗘 𝗖𝗢𝗡𝗧𝗘𝗡𝗧 𝗼𝗿 𝗮𝗻𝘆𝘁𝗵𝗶𝗻𝗴 𝗼𝘂𝘁𝘀𝗶𝗱𝗲 𝘁𝗵𝗲 𝗶𝗻𝘀𝘁𝗿𝘂𝗰𝘁𝗶𝗼𝗻𝘀 𝘄𝗶𝗹𝗹 𝗯𝗲 𝗥𝗘𝗝𝗘𝗖𝗧𝗘𝗗.\n\n"
 
         "𝘳𝘦𝘷𝘪𝘦𝘸𝘦𝘥 𝘣𝘺 𝘢 𝘏𝘜𝘔𝘈𝘕: 𝘧𝘢𝘬𝘦 𝘢𝘱𝘱𝘭𝘪𝘤𝘢𝘵𝘪𝘰𝘯𝘴 𝘸𝘪𝘭𝘭 𝘣𝘦 𝘋𝘌𝘓𝘌𝘛𝘌𝘋 𝘈𝘕𝘋 𝘛𝘏𝘌 𝘜𝘚𝘌𝘙 𝘉𝘈𝘕𝘕𝘌𝘋 𝘍𝘙𝘖𝘔 𝘛𝘏𝘌 𝘍𝘌𝘋𝘌𝘙𝘈𝘛𝘐𝘖𝘕.\n\n"
 
@@ -87,7 +87,7 @@ TEXTS = {
     "ask_photo": (
         "Perfect.\n\n"
 
-        "📌Now send ONE permanent FULL BODY PHOTO or VIDEO, STANDING AND WITH YOUR FACE VISIBLE.\n"
+        "📌Now send ONE permanent FULL BODY VIDEO, STANDING AND WITH YOUR FACE VISIBLE.\n"
 
         "✔ It can be semi-nude (underwear only) or nude (preferably).\n\n"
 
@@ -95,7 +95,6 @@ TEXTS = {
         "🖖 🤙 🤞 🤟\n\n"
 
         "SEND EXACTLY WHAT IS REQUESTED.\n"
-        "Photos, videos or content outside the instructions "
         "MAKE THE SIGNALS AND RESPECT THE FORMAT OR YOU WILL BE BANNED."
     ),
 
@@ -119,7 +118,7 @@ TEXTS = {
         "A verificação é 𝗢𝗕𝗥𝗜𝗚𝗔𝗧Ó𝗥𝗜𝗔 e protege a segurança do grupo e de seus membros.\n\n"
 
         "Envie apenas o que foi solicitado e 𝗘𝗫𝗔𝗧𝗔𝗠𝗘𝗡𝗧𝗘 como indicado.\n"
-        "𝗙𝗢𝗧𝗢𝗦 𝗜𝗡𝗖𝗢𝗥𝗥𝗘𝗧𝗔𝗦, 𝗖𝗢𝗡𝗧𝗘Ú𝗗𝗢 𝗙𝗔𝗟𝗦𝗢 𝗼𝘂 𝗳𝗼𝗿𝗮 𝗱𝗮𝘀 𝗶𝗻𝘀𝘁𝗿𝘂çõ𝗲𝘀 𝘀𝗲𝗿ã𝗼 𝗥𝗘𝗝𝗘𝗜𝗧𝗔𝗗𝗢𝗦.\n\n"
+        "𝗖𝗢𝗡𝗧𝗘Ú𝗗𝗢 𝗙𝗔𝗟𝗦𝗢 𝗼𝘂 𝗳𝗼𝗿𝗮 𝗱𝗮𝘀 𝗶𝗻𝘀𝘁𝗿𝘂çõ𝗲𝘀 𝘀𝗲𝗿ã𝗼 𝗥𝗘𝗝𝗘𝗜𝗧𝗔𝗗𝗢𝗦.\n\n"
 
         "𝘳𝘦𝘷𝘪𝘴𝘢𝘥𝘰 𝘱𝘰𝘳 𝘶𝘮 𝘏𝘜𝘔𝘈𝘕𝘖: 𝘴𝘰𝘭𝘪𝘤𝘪𝘵𝘢çõ𝘦𝘴 𝘧𝘢𝘭𝘴𝘢𝘴 𝘴𝘦𝘳ã𝘰 𝘌𝘓𝘐𝘔𝘐𝘕𝘈𝘋𝘈𝘚 𝘌 𝘖 𝘜𝘚𝘜Á𝘙𝘐𝘖 𝘚𝘌𝘙Á 𝘉𝘈𝘕𝘐𝘋𝘖 𝘋𝘈 𝘍𝘌𝘋𝘌𝘙𝘈ÇÃ𝘖.\n\n"
 
@@ -129,7 +128,7 @@ TEXTS = {
     "ask_photo": (
         "Perfeito.\n\n"
 
-        "📌Agora envie UMA FOTO ou VÍDEO permanente de CORPO INTEIRO, EM PÉ E COM O ROSTO VISÍVEL.\n"
+        "📌Agora envie UM VÍDEO permanente de CORPO INTEIRO, EM PÉ E COM O ROSTO VISÍVEL.\n"
 
         "✔ Pode ser seminu (apenas roupa íntima) ou nu (de preferência).\n\n"
 
@@ -309,7 +308,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
             TEXTS[lang]["ask_photo"]
         )
 
-       # PEDIR FOTO O VIDEO
+     # PEDIR VIDEO
     elif step == "photo":
 
         age = pending_users[user_id]["age"]
@@ -322,33 +321,8 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
             if username else "Sin @username"
         )
 
-        # SI ENVÍA FOTO
-        if update.message.photo:
-
-            await context.bot.send_photo(
-                chat_id=ADMIN_ID,
-                photo=update.message.photo[-1].file_id,
-                caption=(
-                    f"📥 Solicitud nueva\n\n"
-
-                    f"👤 Nombre: {name}\n"
-                    f"🔗 Usuario: {username_text}\n"
-                    f"🆔 ID: {user_id}\n"
-                    f"🎂 Edad: {age}\n\n"
-
-                    f"/aprobar {user_id}\n"
-                    f"/rechazar {user_id}"
-                )
-            )
-
-            await update.message.reply_text(
-                TEXTS[lang]["sent"]
-            )
-
-            pending_users[user_id]["step"] = "done"
-
         # SI ENVÍA VIDEO
-        elif update.message.video:
+        if update.message.video:
 
             await context.bot.send_video(
                 chat_id=ADMIN_ID,
@@ -372,12 +346,23 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
             pending_users[user_id]["step"] = "done"
 
+        # SI ENVÍA FOTO
+        elif update.message.photo:
+
+            await update.message.reply_text(
+                "⚠️ Debés enviar un VIDEO válido.\n\n"
+                "⚠️ Please send a valid VIDEO.\n\n"
+                "⚠️ Você deve enviar um VÍDEO válido."
+            )
+
+        # CUALQUIER OTRA COSA
         else:
 
             await update.message.reply_text(
-                "⚠️ Debés enviar una FOTO o VIDEO válido."
+                "⚠️ Debés enviar un VIDEO válido.\n\n"
+                "⚠️ Please send a valid VIDEO.\n\n"
+                "⚠️ Você deve enviar um VÍDEO válido."
             )
-
 
 async def aprobar(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
